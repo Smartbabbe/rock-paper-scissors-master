@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="m-auto w-3/4 sm:w-1/2">
+      <div>
+        <!-- LOGO SECTION -->
+        <div class="flex justify-between items-center my-6 rounded border py-1 px-5 ">
+          <img src="./images/logo.svg" class="size-6" alt="logo" />
+          <div class="m-4 p-3 px-6 bg-white rounded-xl">
+            <p class="text-xl text-blue-700 font-medium">SCORE</p>
+            <p class="score text-3xl text-center text-gray-700 font-bold">12</p>
+          </div>
+        </div>
+
+
+
+        <!-- BODY OF THE GAME -->
+        <div class="">
+    <!-- DISPLAYING THE OPTIONS OF THE GAME -->
+            <div class="flex justify-center">
+              <div class="">
+                <div class="">
+                  <img src="./images/bg-triangle.svg" class="relative" alt="triangle background" />
+                </div>
+                <div class="">
+                  <img src="./images/icon-paper.svg" class="paper bg-white p-4 rounded-full" alt="paper image" />
+                  <img src="./images/icon-scissors.svg" class="Scissors bg-white p-4 rounded-full" alt="Scissors image" />
+                  <img src="./images/icon-rock.svg" class="rock bg-white p-4 rounded-full" alt="rock image" />
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- PICKING THE OPTIONS -->
+
+            <div>
+              <div>
+                <p>YOU PICKED</p>
+                <p>THE HOUSE PICKED</p>
+              </div>
+
+              <!-- DISPLAYING CHOICES -->
+              <div>
+                <div><img src=""  class="yourChoice" alt="Your choice" /></div>
+                <div><img src="" class="computerChoiceBlank" alt="computer's choice not-display" /></div>
+                <div><img src="" class="computerChoice" alt="computer's choice display" /></div>
+              </div>
+            </div>
+
+            <!-- DISPLAYING WIN RESULTS -->
+
+            <div>
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              <!-- DISPLAYING RESULT BUTTONS -->
+              <div>
+                <p class="hidden">YOU LOSE</p>
+                <p>YOU WIN</p>
+                <button>PLAY AGAIN</button>
+              </div>
+
+              <div><img src="" alt="" /></div>
+            </div>
+
+            <!-- RULES SECTION -->
+            <div>
+              <button>RULES</button>
+              <div><img src="./images/image-rules.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
