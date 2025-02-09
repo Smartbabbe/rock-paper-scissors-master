@@ -14,18 +14,6 @@ let rock = document.querySelector(".rock");
 
 
 // SELECTING CHOICES ELEMENTS
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
-let score = document.querySelector(".score");
+
 
 score.textContent = 13;
