@@ -27,7 +27,7 @@ body {
     background-color: #e7e5e5;
     z-index: 10;
     border-radius: 50%;
-    transition: transform 0.2s ease-in-out;
+    /* transition: transform 0.2s ease-in-out; */
 }
 
 @keyframes bounce {
@@ -38,8 +38,7 @@ body {
     100% { transform: translateY(0); }
   }
 
-.scissors-style:hover, .paper-style:hover, 
-.rock-style:hover {
+.animate:hover {
     animation: bounce 0.9s ease-in-out;
     cursor: pointer;
 }
