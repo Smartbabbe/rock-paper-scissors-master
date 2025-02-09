@@ -57,7 +57,7 @@
                     <img src="./images/icon-scissors.svg" class="" alt="Scissors image" />
                   </div>
                 </div>
-                <div class="w-full flex justify-center mt-17 rock">
+                <div class="rock w-full flex justify-center mt-17">
                   <img src="./images/icon-rock.svg" class="rock-style animate" alt="rock image" />
                 </div>
               </div>
@@ -72,14 +72,23 @@
               </div>
 
               <!-- DISPLAYING CHOICES -->
-              <div class="flex justify-around mt-8 items-center">
-                <div class="mychoice paper-style"><img src="./images/icon-paper.svg"  class="yourChoice" alt="Your choice" /></div>
-                <div class="hidden text-center">
-                  <p class="text-3xl font-bold hidden">YOU LOSE</p>
-                  <p class="text-3xl font-bold">YOU WIN</p>
-                  <button class="bg-white text-red-600 w-full rounded font-medium mt-4 py-1">PLAY AGAIN</button>
+              <div class="flex flex-wrap justify-center mt-8 items-center">
+                <div class="mychoice flex justify-center md:w-1/3 w-1/2 order-1">
+                  <div class="w-1/2">
+                    <img src=""  class="yourChoice" alt="Your choice" />
+
+                  </div>
                 </div>
-                <div class="computerchoice"><img src="./images/icon-rock.svg" class="computerChoice" alt="computer's choice display" /></div>
+                
+                <div class="resultDiv hidden mt-6 flex-row order-3 md:order-2 justify-center text-center">
+                  <p class="lose hidden text-3xl font-bold pt-7">YOU LOSE</p>
+                  <p class="win hidden text-3xl font-bold">YOU WIN</p>
+                  <p class="draw hidden text-3xl font-bold">IT IS A DRAW</p>
+                  <button class="play-again bg-white text-red-600 rounded font-medium mt-4 py-1">PLAY AGAIN</button>
+                </div>
+
+                <div class="computerchoice flex order-2 md:order-3 justify-center md:w-1/3 w-1/2">
+                  <img src="" class="computerChoice" alt="computer's choice" /></div>
               </div>
             </div>
 
