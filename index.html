@@ -29,77 +29,118 @@
       }
     </style>
   </head>
-  <body class="p-5">
-    <div class="lg:m-auto w-full lg:w-3/4">
-      <div>
+  <body>
+    <div>
+      <div class="full-page lg:m-auto w-full lg:w-3/4 relative p-5">
         <!-- LOGO SECTION -->
-        <div class="flex justify-between items-center md:w-3/5 md:m-auto  lg:my-6 rounded border py-1 px-5 ">
+        <div
+          class="flex justify-between items-center md:w-3/5 md:m-auto lg:my-6 rounded border py-1 px-5"
+        >
           <img src="./images/logo.svg" class="lg:size-6" alt="logo" />
           <div class="m-4 p-3 px-6 bg-white rounded-xl">
             <p class="text-xl text-blue-700 font-medium">SCORE</p>
-            <p class="score text-3xl text-center text-gray-700 font-bold">12</p>
+            <p class="score text-3xl text-center text-gray-700 font-bold">0</p>
           </div>
         </div>
-
-
 
         <!-- BODY OF THE GAME -->
         <div class="mt-15">
-    <!-- DISPLAYING THE OPTIONS OF THE GAME -->
-            <div class="options flex justify-center relative">
-              <img src="./images/bg-triangle.svg" class="absolute set-image" alt="triangle background" />
-              <div class="w-full lg:w-1/2 flex flex-col gap-8">
-                <div class="w-full flex justify-around "> 
-                  <div class="paper paper-style animate">
-                  <img src="./images/icon-paper.svg" class="" alt="paper image" />
-                  </div>
-                  <div class="scissors scissors-style animate">
-                    <img src="./images/icon-scissors.svg" class="" alt="Scissors image" />
-                  </div>
+          <!-- DISPLAYING THE OPTIONS OF THE GAME -->
+          <div class="options flex justify-center relative">
+            <img
+              src="./images/bg-triangle.svg"
+              class="absolute set-image"
+              alt="triangle background"
+            />
+            <div class="w-full lg:w-1/2 flex flex-col gap-8">
+              <div class="w-full flex justify-around">
+                <div class="paper paper-style animate">
+                  <img
+                    src="./images/icon-paper.svg"
+                    class=""
+                    alt="paper image"
+                  />
                 </div>
-                <div class="rock w-full flex justify-center mt-17">
-                  <img src="./images/icon-rock.svg" class="rock-style animate" alt="rock image" />
+                <div class="scissors scissors-style animate">
+                  <img
+                    src="./images/icon-scissors.svg"
+                    class=""
+                    alt="Scissors image"
+                  />
                 </div>
+              </div>
+              <div class="rock w-full flex justify-center mt-17">
+                <img
+                  src="./images/icon-rock.svg"
+                  class="rock-style animate"
+                  alt="rock image"
+                />
               </div>
             </div>
+          </div>
 
-            <!-- PICKING THE OPTIONS -->
+          <!-- PICKING THE OPTIONS -->
 
-            <div class="mt-12 hidden displayOptions">
-              <div class="flex justify-around text-xl md:text-3xl font-bold">
-                <p>YOU PICKED</p>
-                <p>THE HOUSE PICKED</p>
-              </div>
-
-              <!-- DISPLAYING CHOICES -->
-              <div class="flex flex-wrap justify-center mt-8 items-center">
-                <div class="mychoice flex justify-center md:w-1/3 w-1/2 order-1">
-                  <div class="w-1/2">
-                    <img src=""  class="yourChoice" alt="Your choice" />
-
-                  </div>
-                </div>
-                
-                <div class="resultDiv hidden mt-6 flex-row order-3 md:order-2 justify-center text-center">
-                  <p class="lose hidden text-3xl font-bold pt-7">YOU LOSE</p>
-                  <p class="win hidden text-3xl font-bold">YOU WIN</p>
-                  <p class="draw hidden text-3xl font-bold">IT IS A DRAW</p>
-                  <button class="play-again bg-white text-red-600 rounded font-medium mt-4 py-1">PLAY AGAIN</button>
-                </div>
-
-                <div class="computerchoice flex order-2 md:order-3 justify-center md:w-1/3 w-1/2">
-                  <img src="" class="computerChoice" alt="computer's choice" /></div>
-              </div>
+          <div class="mt-12 hidden displayChoices">
+            <div class="flex justify-around text-xl md:text-3xl font-bold">
+              <p>YOU PICKED</p>
+              <p>THE HOUSE PICKED</p>
             </div>
 
-            <!-- RULES SECTION -->
-            <div class="flex justify-end">
-              <button class="border px-6 rounded mt-[6rem] rules-button hover:text-gray-500 hover:border-gray-500">RULES</button>
-              <div><img src="./images/image-rules.svg" class="hidden" alt=""></div>
+            <!-- DISPLAYING CHOICES -->
+            <div
+              class="flex flex-wrap justify-center md:justify-between sm:flex-nowrap gap-5 mt-8 items-center"
+            >
+              <div class="mychoice flex justify-center order-1">
+                <img src="" class="yourChoice" alt="Your choice" />
+              </div>
+
+              <div
+                class="resultDiv mt-6 items-center justify-center order-3 sm:order-2 text-center"
+              >
+                <p class="lose hidden text-5xl md:text-3xl font-bold pt-7">
+                  YOU LOSE
+                </p>
+                <p class="win hidden text-5xl md:text-3xl font-bold">YOU WIN</p>
+                <p class="draw hidden text-5xl md:text-3xl font-bold">
+                  IT IS A DRAW
+                </p>
+                <button
+                  class="play-again text-2xl bg-white text-red-600 rounded font-medium mt-4 py-1 px-5"
+                >
+                  PLAY AGAIN
+                </button>
+              </div>
+
+              <div
+                class="computerchoice flex order-2 sm:order-3 justify-center"
+              >
+                <img src="" class="computerChoice" alt="computer's choice" />
+              </div>
             </div>
           </div>
         </div>
-       
+      </div>
+
+      <!-- RULES SECTION -->
+      <div class="rules-button-overlay flex justify-end">
+        <button class="border px-6 rounded rules-button justify-end hover:text-gray-500 hover:border-gray-500">
+          RULES
+        </button>
+        <div
+          class="rules-img-div hidden flex justify-center items-center sm:rounded-xl h-screen sm:h-auto w-full sm:w-1/3 m-auto bg-white"
+        >
+          <div class="flex flex-col text-center sm:w-full items-center p-5">
+            <div class="flex justify-between mb-5 w-full">
+              <p class="text-5xl text-gray-700 font-bold py-5">RULES</p>
+              <button class="w-min">
+                <img src="images/icon-close.svg" class="close-icon" alt="" />
+              </button>
+            </div>
+            <img src="./images/image-rules.svg" class="rules-img sm:rules-img-small" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="attribution">
